@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <language lang="en" humanReadable="English">
+        <content id="language">Language:</content>
+        <content id="first line">
+            The graph below shows the time behavior of the switch gate signal, and of characteristic currents and
+            voltages of the buck-boost converter. Drag the vertical (red) time-marker line with the mouse. The according
+            switching states are shown in the animated circuit above. The (orange) gate-signal cannot be dragged with
+            the mouse because the duty cycle is set by the output voltage controller.
+        </content>
+        <content id="second line">
+            Normalized current: \(i = I_{out,avg}\frac{2Lf}{U_2}\)
+            <br/>
+            <br/>
+            The right-hand applet shows a diagram of the duty cycle in dependency of the normalized load. To change the
+            constant voltage ratio drag the (red) curve with the mouse. Change the actual load by dragging the red point
+            with the mouse. The green line defines the borderline between continuous and discontinuous inductor current
+            mode.
+            <br/>
+            <b>Remark:</b>
+            Here the output voltage is kept constant by the output voltage controller. Therefore,
+            changing the voltage transfer ratio \(\frac{u2}{u1}\) does change the input voltage.
+        </content>
+        <content id="qna">
+            <ol>
+                <li>
+                    <form id="question1">
+                        What is the relation between duty cycle, input voltage and output voltage (for continuous mode)?
+                        (Difficulty 1)
+                        <br/>
+                        <input type="radio" name="question1" id="answer1"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">\(d = \frac{V_{in}}{V_{out}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer2"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">\(d = \frac{V_{in}}{V_{out} -
+                            V_{in}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer3"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">\(d = \frac{V_{in}}{V_{out} +
+                            V_{in}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer4"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">\(d = \frac{V_{out}}{V_{out} -
+                            V_{in}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer5"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">\(d = \frac{V_{out}}{V_{out} -
+                            V_{in}}\)
+                        </input>
+                        <br/>
+                        Duty cycle depends on other parameters also.
+                    </form>
+                    <div id="feedback1wrong" class="wrong-answer">
+                        Incorrect!
+                    </div>
+                    <div id="feedback1right" class="right-answer">
+                        Correct!
+                    </div>
+                </li>
+                <li>
+                    Write the KVL and KCL equations for the two operating states: switch is ON and switch is OFF.
+                    (Difficulty 1)
+                </li>
+                <li>
+                    Analyse how the circuit can be used as buck as well as a boost converter. (Difficulty 1)
+                </li>
+                <li>
+                    Do the state space analysis of the converter system. (Difficulty 3)
+                </li>
+            </ol>
+        </content>
+    </language>
+
+    <language lang="de" humanReadable="Deutsch">
+        <content id="language">Sprache:</content>
+        <content id="first line">
+            Der folgende Graph zeigt das Zeitverhältnis des Switch Gate-Signals und der charakteristischen Ströme und
+            Spannungen des Buck Boost-Converters. Ziehe den vertikalen (roten) Marker mit der Maus. The entsprechenden
+            Schalterzustände werden im animierten Schaltkreis oberhalb gezeigt. Das (orange) Gate-Signal kann nicht mit
+            der Maus verschoben werden, da das Tastverhältnis vom Ausgangsspannungs-Controller gesetzt wird.
+        </content>
+        <content id="second line">
+            Normalisierter Strom: \(i = I_{out,avg}\frac{2Lf}{U_2}\)
+            <br/>
+            <br/>
+            Der unterste Graph zeigt ein Diagramm des Tastverhältnisses in Abhängigkeit der normalisierten Last. Ziehe
+            die (rote) Linie mit der Maus, um das konstante Spannungsverhältnis zu ändern. Ziehe den roten Punkt, um die
+            effektive Last zu ändern. Die grüne Linie definiert die Grenze zwischen kontinuierlichem und
+            diskontinuierlichem Spulenstrom-Modus.
+            <br/>
+            <b>Anmerkung:</b>
+            Hier wird die Ausgangsspannung durch den Ausgangsspannungs-Controller konstant gehalten.
+            Deshalb ändert eine Änderung am Spannungstransferverhältnis \(\frac{u2}{u1}\) die Eingangsspannung.
+        </content>
+        <content id="qna">
+            <ol>
+                <li>
+                    <form id="question1">
+                        Wie ist der Zusammenhang zwischen Tastverhältnis, Eingangs- and Ausgangsspannung (für
+                        kontinuierlichen Modus)? (Schwierigkeitsstufe 1)
+                        <br/>
+                        <input type="radio" name="question1" id="answer1"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">
+                            \(d = \frac{V_{in}}{V_{out}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer2"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">
+                            \(d = \frac{V_{in}}{V_{out} - V_{in}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer3"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">
+                            \(d = \frac{V_{in}}{V_{out} + V_{in}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer4"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">
+                            \(d = \frac{V_{out}}{V_{out} - V_{in}}\)
+                        </input>
+                        <br/>
+                        <input type="radio" name="question1" id="answer5"
+                               onChange="iPES.BuckBoost.Questions().checkAnswer1()">
+                            \(d = \frac{V_{out}}{V_{out} - V_{in}}\)
+                        </input>
+                        <br/>
+                        Tastverhältnis hängt zusätzlich von anderen Parametern ab.
+                    </form>
+                    <div id="feedback1wrong" class="wrong-answer">
+                        Falsch!
+                    </div>
+                    <div id="feedback1right" class="right-answer">
+                        Richtig!
+                    </div>
+                </li>
+                <li>
+                    Schreibe KVL- und KCL-Gleichungen für die beiden Operationsmodi auf: Schalter ist AN und Schalter
+                    ist
+                    AUS. (Schwierigkeitsstufe 1)
+                </li>
+                <li>
+                    Analysiere, wie die Schaltung als Buck Converter wie auch als Boost Converter verwendet werden kann.
+                    (Schwierigkeitsstufe 1)
+                </li>
+                <li>
+                    Mache die Zustandsraumanalyse des Converter-Systems. (Schwierigkeitsstufe 3)
+                </li>
+            </ol>
+        </content>
+    </language>
+</root>
